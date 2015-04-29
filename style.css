@@ -1,0 +1,11 @@
+body {
+  background-color: #445878;
+  color: #EEEFF7;
+
+}
+#box {
+  display: flex;
+  flex-direction: row;
+
+
+}
