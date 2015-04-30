@@ -1,4 +1,4 @@
-(function() {
+$(function() {
   var catUrls = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg" ];
   var Picture = function (url) {
     this.url   = url;
@@ -21,14 +21,12 @@
       });
     }
     this.newPictures = function () {
-      var leftPic = document.getElementById('left_side');
-      var rightPic = document.getElementById('right_side');
       console.log(tracker.randomCatPic());
       this.currentLeftPic = tracker.randomCatPic();
       this.currentRightPic = tracker.randomCatPic();
-      leftPic.innerHTML = '<img src = "' + this.currentLeftPic.url + '">';
-      rightPic.innerHTML = '<img src = "' + this.currentRightPic.url + '">';
-      console.log(leftPic.innerHTML);
+      $('#left_side').html('<img src = "' + this.currentLeftPic.url + '">');
+      $('#right_side').html('<img src = "' + this.currentRightPic.url + '">');
+      $('.side').css('border', '0');
     };
 }
 var tracker = new Tracker(0,0);
@@ -68,4 +66,4 @@ catchart = new Chart(catChart).Pie([
 
   ]);
 
-})();
+});
