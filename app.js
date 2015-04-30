@@ -8,6 +8,6 @@ app.get('/secret', function(req, res) {
 app.get('/*', function(req,res) {
   res.status(404).send('404 Page Not Here!');
 });
-app.listen(5000, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log('server operational!');
 });
