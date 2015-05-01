@@ -1,0 +1,14 @@
+{
+  "name": "votetracker",
+  "version": "1.0.0",
+  "description": "\"tracking votes for cats\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateja",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
